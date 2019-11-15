@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>$title$</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <script src="./lib/jquery-3.3.1.min.js"></script>
+    <script src="./lib/jquery.fancybox.min.js"></script>
+    <script src="./lib/report.js"></script>
+    <link rel="stylesheet" type="text/css" href="./lib/jquery.fancybox.min.css">
+    <link rel="stylesheet" type="text/css" href="./lib/report.css">
+</head>
+<body>
+<h2>$title$</h2>
+<div style="padding-top:5px"><a href="report.html#parameters">Parameters</a></div>
+<div style="padding-top:5px"><a href="report.html#parameters">Statistics</a></div>
+<div style="padding-top:5px"><a href="report.html#screens">Screens</a></div>
+<div style="padding-top:5px"><a href="report.html#logs">Logs</a></div>
+<div style="padding-top:5px"><a name="parameters">
+<table class="table_parameters">
+    <caption>Parameters</caption>
+    <tr>
+        <th>Name</th>
+        <th>Current</th>
+        <th>Baseline</th>
+        <th>Common</th>
+    </tr>
+    <!-- cb_parameter_row_begin -->
+    <tr>
+        <td>$parameter_name$</td>
+        <td>$current_value$</td>
+        <td>$baseline_value$</td>
+        <td></td>
+    </tr>
+    <!-- cb_parameter_row_end -->
+    <!-- common_parameter_row_begin -->
+    <tr>
+        <td>$parameter_name$</td>
+        <td></td>
+        <td></td>
+        <td>$common_value$</td>
+    </tr>
+    <!-- common_parameter_row_end -->
+</table>
+</a>
+</div>
+<div>
+<a name="statistics">
+<table class="table_statistics">
+    <caption>Statistics</caption>
+    <tr>
+        <th>Metric</th>
+        <th>Value</th>
+    </tr>
+	<!-- stat_row_begin -->
+    <tr>
+        <td style="width:50%;">$stat_metric$</td>
+        <td style="width:50%;">$stat_value$</td>
+    </tr>
+	<!-- stat_row_end -->
+</table>
+</a>
+</div>
+<div>
+<a name="screens">
+<table class="table_screens">
+    <caption>Screens</caption>
+    <tr>
+		<th>Info</th>
+		<th>Diff</th>
+        <th>Current</th>
+        <th>Baseline</th>
+    </tr>
+	<!-- images_row_begin -->
+    <tr>
+	    <td style="width:20%;" align="left" valign="top" nowrap="nowrap">
+			<div class="t-simple">
+            <a>$info$</a><br>
+			</div>
+        </td>
+		<td style="width:20%;" align="center">
+			<div class="t-screens">
+			<a href="$diff_link$" data-fancybox="gallery" data-type="image" data-caption="$diff_text$">
+				<img src="$diff_link$" width="100%" alt="$diff_text$" />
+			</a>
+			</div>
+        </td>
+		<td style="width:20%;" align="center">
+			<div class="t-screens">
+			<a href="$current_link$" data-fancybox="gallery" data-type="image" data-caption="$current_text$">
+				<img src="$current_link$" width="100%" alt="$current_text$" />
+			</a>
+			</div>
+        </td>
+		<td style="width:20%;" align="center">
+			<div class="t-screens">
+			<a href="$baseline_link$" data-fancybox="gallery" data-type="image" data-caption="$baseline_text$">
+				<img src="$baseline_link$" width="100%" alt="$baseline_text$" />
+			</a>
+			</div>
+		</td>
+    </tr>
+	<!-- images_row_end -->
+</table>
+</a>
+</div>
+<div>
+<a name="logs">
+<table class="table_logs">
+    <caption>Logs</caption>
+    <tr>
+		<th>Info</th>
+		<th>Diff</th>
+        <th>Current</th>
+        <th>Baseline</th>
+    </tr>
+	<!-- log_row_begin -->
+    <tr>
+	    <td class="td-normal" valign="top" align="left">
+		<div class="t-simple">
+			<a>$info$</a><br>
+		</div>
+        </td>
+		<td class="td-wide" valign="top" align="left">
+		<div class="t-normal">
+			<a>$diff_log$</a>
+		</div>
+        </td>
+		<td class="td-normal" valign="top" align="left">
+		<div class="t-normal">
+			<a>$current_log$</a>
+		</div>
+        </td>
+		<td class="td-normal" valign="top" align="left">
+		<div class="t-normal">
+			<a>$baseline_log$</a>
+		</div>
+		</td>
+    </tr>
+	<!-- log_row_end -->
+</table>
+</a>
+</div>
+<div style="padding-top:5px"><a href="report.html#parameters">Parameters</a></div>
+<div style="padding-top:5px"><a href="report.html#parameters">Statistics</a></div>
+<div style="padding-top:5px"><a href="report.html#screens">Screens</a></div>
+<div style="padding-top:5px"><a href="report.html#logs">Logs</a></div>
+<div align=center style="padding-top:10px"><a>2GIS Zenith 2018 r</a></div>
+</body>
+</html>

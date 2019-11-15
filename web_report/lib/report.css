@@ -1,0 +1,148 @@
+h1 {
+    color: #1d1e2d;
+}
+
+p {
+    color: #1d1e2d;
+}
+
+body {
+    background: rgb(230,230,230);
+    font-family: Consolas, sans-serif;
+    border: rgb(100,100,100) 0px solid;
+    border-left: 0px none;
+    border-right: 0px none;
+    border-top: 0px none;
+    margin-bottom: 0px;
+    margin-left: 2%;
+    margin-right: 0%;
+    color:  rgb(0,0,0);
+    font-size: 12pt;
+    font-weight: normal;
+    text-align: left;
+}
+
+table {
+    font-family: Consolas, sans-serif;
+    border-collapse: collapse;
+    background-color: #fafaff;
+}
+
+caption {
+    border:0px solid silver;
+    color: blue;
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: left;
+}
+
+td, th {
+    border: 1px solid #b1b1cd;
+    width: 20%;
+    max-width: 100px;
+}
+
+td.td-normal {
+    width:20%;
+    max-width:100px;
+}
+
+td.td-wide {
+    width:20%;
+    max-width:1000px;
+}
+
+tr:nth-child(1) {
+    background-color:  #e8eaff;
+}
+
+table.table_parameters {
+    width: 74%;
+}
+
+table.table_statistics {
+    width: 37%;
+}
+
+table.table_screens {
+    width: 98%;
+}
+
+table.table_logs {
+    width: 98%;
+    white-space: nowrap;
+}
+
+div.t-screens {
+    font-size: small;
+    font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 0px;
+    display: block;
+}
+
+div.t-large {
+    font-size: medium;
+    font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 0px;
+}
+
+div.t-simple {
+    font-size: small;
+    font-weight: normal;
+    white-space: normal;
+    border: 0px;
+}
+
+div.t-normal {
+    font-size: small;
+    font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 0px;
+}
+
+div.t-green {
+    font-size: small;
+    font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 0px;
+    background-color: #a0ffb9;
+}
+
+div.t-red {
+    font-size: small;
+    font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 0px;
+    background-color: #ffcccc;
+}
+
+div.t-violet {
+    font-size: small;
+    font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 0px;
+    background-color: #b3b3ff;
+}
+
+div.collapse {
+    font-size: small;
+    font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #c9cefc;
+}
